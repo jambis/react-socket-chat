@@ -1,6 +1,7 @@
 const io = require("socket.io-client");
 
 export default function() {
+  //use io.connect(http://localhost:3001) for local testing
   const socket = io.connect();
 
   function message(data) {

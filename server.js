@@ -1,9 +1,12 @@
-const app = require("express")();
+const express = require("express");
+const app = express();
 const server = require("http").Server(app);
 const io = require("socket.io")(server);
 
 const users = [];
 const PORT = process.env.PORT || 3001;
+
+app.use(express.static("client"));
 
 io.on("connection", socket => {
   socket.on("message", data => {
