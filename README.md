@@ -28,7 +28,7 @@ app.get("*", (request, response) => {
 });
 ```
 
-*You can start the server by running in your terminal the following line:
+* You can start the server by running in your terminal the following line:
 ```
 node server.js
 ```
