@@ -1,4 +1,6 @@
 const express = require("express");
+const path = require("path");
+
 const app = express();
 const server = require("http").Server(app);
 const io = require("socket.io")(server);
@@ -6,7 +8,13 @@ const io = require("socket.io")(server);
 const users = [];
 const PORT = process.env.PORT || 3001;
 
-app.use(express.static("client"));
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/dist"));
+}
+
+app.get("*", (request, response) => {
+  response.sendFile(path.join(__dirname, "client/build", "index.html"));
+});
 
 io.on("connection", socket => {
   socket.on("message", data => {
