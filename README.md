@@ -2,26 +2,17 @@
 
 Simple chat app using react and socket.io.
 
-### Prerequisites
-
-
-
-```
-Give examples
-```
-
-
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-*Clone or download the project
-*Install dependencies
+* Clone or download the project
+* Install dependencies
 ```
 npm install
 ```
 
-*You will want to first change the following line in src/socket.js:
+* You will want to first change the following line in src/socket.js:
 ```
 const socket = io.connect()
 ```
@@ -30,7 +21,7 @@ to
 const socket = io.connect(http://localhost:3001)
 ```
 
-*Also within server.js comment out the following line:
+* Also within server.js comment out the following line:
 ```
 app.get("*", (request, response) => {
   response.sendFile(path.join(__dirname, "build", "index.html"));
@@ -42,7 +33,7 @@ app.get("*", (request, response) => {
 node server.js
 ```
 
-*Finally you can run the app by typing in your terminal
+* Finally you can run the app by typing in your terminal
 ```
 npm start
 ```
@@ -53,15 +44,15 @@ You can view a live demo over at https://react-chat-jb.herokuapp.com/
 
 ## Built With
 
-*create-react-app
-*express
-*socket.io
+* create-react-app
+* express
+* socket.io
 
 ## Future Work
 
-*Unit testing
-*Select name colors
-*Add Emoticons
+* Unit testing
+* Select name colors
+* Add Emoticons
 
 ## License
 
