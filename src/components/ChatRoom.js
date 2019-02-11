@@ -2,10 +2,10 @@ import React, { Component } from "react";
 import List from "@material-ui/core/List";
 import TextField from "@material-ui/core/TextField";
 import { withStyles } from "@material-ui/core/styles";
+import faker from "faker";
 import ChatItem from "./ChatItem";
 import NameModal from "./NameModal";
 import UsersPopper from "./UsersPopper";
-import faker from "faker";
 
 const styles = () => ({
   div_center: {
