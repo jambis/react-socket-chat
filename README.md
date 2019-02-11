@@ -2,6 +2,10 @@
 
 Simple chat app using react and socket.io.
 
+## Demo
+
+You can view a live demo over at https://react-chat-jb.herokuapp.com/
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
@@ -37,10 +41,6 @@ node server.js
 ```
 npm start
 ```
-
-## Demo
-
-You can view a live demo over at https://react-chat-jb.herokuapp.com/
 
 ## Built With
 
