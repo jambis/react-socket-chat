@@ -12,6 +12,7 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("build"));
 }
 
+//Remove or comment out the following function (app.get...) when testing locally with npm start
 app.get("*", (request, response) => {
   response.sendFile(path.join(__dirname, "build", "index.html"));
 });
